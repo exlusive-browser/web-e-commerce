@@ -1,0 +1,159 @@
+:root {
+  --main-dk: #2e86c1;
+  --main: #3498db;
+  --main-lg: #3498db;
+
+  --divider-color: #bdbdbd;
+  --primary-text: #333;
+  --constrast-text: #fff;
+
+  --divider-color: #bdbdbd;
+}
+
+/* Header */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-text);
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", system-ui;
+  background-color: #fafafa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo span {
+  font-family: "Montserrat", system-ui;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.search-bar button {
+  padding: 6px 10px;
+  background-color: var(--main);
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 18px;
+  height: 18px;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.header-links a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.header-links a span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-links a:hover {
+  color: var(--main-lg);
+}
+
+/* Sub Header */
+
+.subheader {
+  padding: 0.8rem 2rem;
+  background-color: #fff;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 0.5rem;
+  padding: 8px 12px;
+  color: var(--primary-text);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menu-item:hover {
+  color: var(--main-lg);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  list-style-type: none;
+  margin: 0;
+  width: 200px;
+}
+
+.submenu li {
+  padding: 8px 12px;
+  color: var(--primary-text);
+  cursor: pointer;
+}
+
+.submenu li:hover {
+  background-color: #ededed;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
