@@ -151,6 +151,10 @@ header {
   width: 200px;
 }
 
+.submenu li a {
+  text-decoration: none;
+}
+
 .submenu li {
   padding: 8px 12px;
   color: var(--primary-text);
@@ -231,6 +235,10 @@ header {
 .drawer-submenu li {
   padding: 4px 8px;
   cursor: pointer;
+}
+
+.drawer-submenu li a {
+  text-decoration: none;
 }
 
 .drawer-submenu li:hover {
