@@ -10,8 +10,6 @@
   --divider-color: #bdbdbd;
 }
 
-/* Header */
-
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +21,16 @@ body {
   margin: 0;
   font-family: "Open Sans", system-ui;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
+.dummy-content {
+  flex-grow: 1;
+}
+
+/* Header */
 
 header {
   display: flex;
@@ -296,5 +303,102 @@ header {
 
   .drawer.open {
     transform: translateX(0);
+  }
+}
+
+/* Footer */
+
+footer * {
+  color: #fff;
+}
+
+footer {
+  background-color: #1c2833;
+  padding: 1.5rem 4rem;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.company-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", system-ui;
+}
+
+.company-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-methods p {
+  font-weight: bold;
+}
+
+.payment-methods-logos {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-lower {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.site-map {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-map li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.site-map a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-map a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .footer-upper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .company-info p {
+    text-align: center;
+  }
+
+  .payment-methods-logos {
+    justify-content: center;
   }
 }
