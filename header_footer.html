@@ -17,6 +17,9 @@
     <!-- Header -->
 
     <header>
+      <button class="hamburger">
+        <img src="svgs/header/hamburger.svg" alt="Menu" />
+      </button>
       <div class="logo">
         <img src="svgs/header/logo.svg" alt="Company Logo" />
         <span>Up Ecommerce</span>
@@ -81,5 +84,69 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Drawer -->
+
+    <div class="drawer">
+      <div class="drawer-content">
+        <button class="close-drawer">X</button>
+        <div class="drawer-search-bar">
+          <input type="text" placeholder="Search for products" />
+        </div>
+        <nav class="drawer-menu-nav">
+          <ul>
+            <li class="drawer-menu-item">
+              <span>Technology</span>
+              <ul class="drawer-submenu">
+                <li>Computers</li>
+                <li>Televisions</li>
+                <li>Audio</li>
+                <li>Video</li>
+                <li>Printing</li>
+                <li>Cameras</li>
+              </ul>
+            </li>
+            <li class="drawer-menu-item">
+              <span>Appliances</span>
+              <ul class="drawer-submenu">
+                <li>Air Conditioning</li>
+                <li>Refrigeration</li>
+                <li>Washers/Dryers</li>
+              </ul>
+            </li>
+            <li class="drawer-menu-item">
+              <span>Smartphones</span>
+              <ul class="drawer-submenu">
+                <li>Cell Phones</li>
+                <li>Tablets</li>
+                <li>Smartwatch</li>
+              </ul>
+            </li>
+            <li class="drawer-menu-item">
+              <span>Home</span>
+              <ul class="drawer-submenu">
+                <li>Living Rooms</li>
+                <li>Dining Room</li>
+                <li>Kitchen</li>
+                <li>Bathroom</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- End of Header -->
   </body>
+  <script>
+    document.querySelector(".hamburger").addEventListener("click", function () {
+      document.querySelector(".drawer").classList.add("open");
+    });
+
+    document
+      .querySelector(".close-drawer")
+      .addEventListener("click", function () {
+        document.querySelector(".drawer").classList.remove("open");
+      });
+  </script>
 </html>
