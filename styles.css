@@ -383,12 +383,13 @@ footer {
   pointer-events: none;
 }
 
-section {
-  /* background-color: white; */
+.product-desc{
+  padding: 0px 100px;
+  background-color: white;
 }
 
 section h1 {
-  padding: 20px 50px;
+  padding: 20px 0px;
   font-size: 2.5rem;
   /* margin-top: 20px; */
 }
@@ -511,13 +512,14 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
 .desc-container {
   display: flex;
   flex-direction: column;
-  padding: 0px 20%;
+  /* padding: 0px 20%; */
   margin-top: 20px;
   /* justify-content: ; */
 }
 .desc-container p{
   text-align: justify;
   margin-top: 20px;
+  font-size: 1rem;
 }
 .desc-container h2 {
   margin-top: 20px;
@@ -550,6 +552,47 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
 .shop button:hover {
   background-color: var(--main-dk);
 }
+
+.tech-spec{
+  padding: 0px 100px;
+  background-color: white;
+}
+
+.tech-spec h2{
+  padding-top: 30px;
+}
+.tech-spec table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina los espacios entre bordes */
+  margin-top: 20px;
+}
+
+.tech-spec th, td {
+  padding: 15px;
+  align-items: center;
+  text-align: center; /* Alinea a la izquierda */
+}
+
+.tech-spec td{
+  text-align: center;
+}
+
+.tech-spec thead {
+  background-color: #5499cd; /* Color de fondo para el encabezado */
+}
+
+.tech-spec thead tr th{
+  color: white;
+}
+
+.tech-spec tbody tr:nth-child(even) {
+  background-color: #ebebeb; /* Alterna el color de fondo de las filas */
+}
+
+.tech-spec tbody td:first-child {
+  font-weight: bold; /* Aplica negrita al primer td de cada fila */
+}
+
 
 @media (max-width: 900px) {
   header {
@@ -594,6 +637,19 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
   .drawer.open {
     transform: translateX(0);
   }
+  .product-desc{
+    padding: 10px;
+  }
+  .container-sec1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .desc-container p{
+    font-size: 0.9rem;
+  }
+  .tech-spec{
+      padding: 0px 10px;
+  }
 }
 
 
@@ -614,4 +670,6 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
   .payment-methods-logos {
     justify-content: center;
   }
+  
+  
 }

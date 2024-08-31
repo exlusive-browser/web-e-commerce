@@ -140,7 +140,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Iphone 15</li>
             </ol>
         </nav>
-        <section>
+        <section class="product-desc">
             <h1>iPhone 15</h1>
             <div class="container-sec1">
                 <div class="carrusel-container">
@@ -202,7 +202,9 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="tech-spec">
+            <h2>Technical specifications</h2>
+            <hr>
             <table>
                 <thead>
                     <tr>
@@ -212,19 +214,36 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>iPhone 15</td>
-                        <td>$4.139.010</td>
-                        <td>10</td>
+                        <td>Capacity</td>
+                        <td>
+                            <p>128GB <br>
+                                256GB <br>
+                                512GB</p>
+                        </td>
                     </tr>
                     <tr>
-                        <td>iPhone 15 Pro</td>
-                        <td>$5.139.010</td>
-                        <td>5</td>
+                        <td>Display</td>
+                        <td>
+                            <p>Super Retina XDR display <br>
+                                6.1-inch (diagonal) all-screen OLED display <br>
+                                2556-by-1179-pixel resolution at 460 ppi</p>
+                        </td>
                     </tr>
                     <tr>
-                        <td>iPhone 15 Pro Max</td>
-                        <td>$6.139.010</td>
-                        <td>3</td>
+                        <td>Camera</td>
+                        <td>
+                            <p>Advanced dual-camera system <br>
+                                48MP Main <br>
+                                12MP Ultra Wide <br>
+                                12MP 2x Telephoto</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Charging and Expansion</td>
+                        <td><p>USB-C connector with support for: <br>
+                            Charging <br>
+                            DisplayPort <br>
+                            USB 2 (up to 480Mb/s)</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -234,13 +253,14 @@
 </body>
 <script>
     document.querySelector(".hamburger").addEventListener("click", function () {
-      document.querySelector(".drawer").classList.add("open");
+        document.querySelector(".drawer").classList.add("open");
     });
 
     document
-      .querySelector(".close-drawer")
-      .addEventListener("click", function () {
-        document.querySelector(".drawer").classList.remove("open");
-      });
-  </script>
+        .querySelector(".close-drawer")
+        .addEventListener("click", function () {
+            document.querySelector(".drawer").classList.remove("open");
+        });
+</script>
+
 </html>
