@@ -9,34 +9,238 @@
 </head>
 
 <body>
-    <header></header>
+    <!-- Header -->
+
+    <header>
+        <button class="hamburger">
+            <img src="/images/hamburger.svg" alt="Menu" />
+        </button>
+        <div class="logo">
+            <img src="/images/logo.svg" alt="Company Logo" />
+            <span>Up Ecommerce</span>
+        </div>
+        <div class="search-bar">
+            <button>
+                <img src="/images/magnifyng_glass.svg" alt="Search" />
+            </button>
+            <input type="text" placeholder="Search for products" />
+        </div>
+        <div class="header-links">
+            <a href="account.html">
+                <img src="/images/account-icon.svg" alt="My Account" />
+                <span>My Account</span>
+            </a>
+            <a href="cart.html">
+                <img src="/images/cart-icon.svg" alt="Cart" />
+                <span>Cart</span>
+            </a>
+        </div>
+    </header>
+    <!-- Sub Header -->
+
+    <nav class="subheader">
+        <ul class="menu">
+            <li class="menu-item">
+                Technology
+                <ul class="submenu">
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Televisions</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Printing</a></li>
+                    <li><a href="#">Cameras</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Appliances
+                <ul class="submenu">
+                    <li><a href="#">Air Conditioning</a></li>
+                    <li><a href="#">Refrigeration</a></li>
+                    <li><a href="#">Washers/Dryers</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Smartphones
+                <ul class="submenu">
+                    <li><a href="./plp.html">Smartphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Smartwatch</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Home
+                <ul class="submenu">
+                    <li><a href="#">Living Rooms</a></li>
+                    <li><a href="#">Dining Room</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Bathroom</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Drawer -->
+
+    <div class="drawer">
+        <div class="drawer-content">
+            <button class="close-drawer">X</button>
+            <div class="drawer-search-bar">
+                <input type="text" placeholder="Search for products" />
+            </div>
+            <nav class="drawer-menu-nav">
+                <ul>
+                    <li class="drawer-menu-item">
+                        <span>Technology</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Printing</a></li>
+                            <li><a href="#">Cameras</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Appliances</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Air Conditioning</a></li>
+                            <li><a href="#">Refrigeration</a></li>
+                            <li><a href="#">Washers/Dryers</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Smartphones</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="./plp.html">Smartphones</a></li>
+                            <li><a href="#">Tablets</a></li>
+                            <li><a href="#">Smartwatch</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Home</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Living Rooms</a></li>
+                            <li><a href="#">Dining Room</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Bathroom</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="dummy-content"></div>
+
+    <!-- Main Content -->
     <main>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                <li class="breadcrumb-item"><a href="#">Smartphones</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Iphone 15</li>
             </ol>
         </nav>
         <section>
-            <h1>Product name</h1>
+            <h1>iPhone 15</h1>
             <div class="container-sec1">
-                <div class="img-container">
-                    <img src="/web-e-commerce/images/iphone_15pro.png" alt="Product image">
+                <div class="carrusel-container">
+                    <div class="carrusel">
+
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">
+                        <input type="radio" name="slide" id="slide6">
+
+                        <div class="slides">
+                            <!-- <div class="slide">
+                                <img src="/images/all_colors.jpg" alt="Imagen 1" id="all">
+                            </div> -->
+                            <div class="slide">
+                                <img src="/images/pink.jpg" alt="Imagen 1">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/yellow.jpg" alt="Imagen 2">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/green.jpg" alt="Imagen 3">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/blue.jpg" alt="Imagen 4">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/black.jpg" alt="Imagen 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <label for="slide1"><img src="/images/pink.jpg" alt=""></label>
+                        <label for="slide2"><img src="/images/yellow.jpg" alt=""></label>
+                        <label for="slide3"><img src="/images/green.jpg" alt=""></label>
+                        <label for="slide4"><img src="/images/blue.jpg" alt=""></label>
+                        <label for="slide5"><img src="/images/black.jpg" alt=""></label>
+                        <!-- <label for="slide6"></label> -->
+                    </div>
                 </div>
                 <div class="desc-container">
-                    <p>Product description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium impedit modi quam eaque harum eius culpa voluptates rem labore vitae ullam, tempora officia dolores excepturi fugiat aut ducimus dignissimos praesentium.</p>
-                    <h2>price</h2>
+                    <h3>Product description</h3>
+                    <p>With the iPhone 15 you will discover the magic of the Dynamic Island! You can interact with
+                        alerts and Live Activities: music, calls, even check the status of your flight. You won't miss a
+                        thing while doing it all. Its sleek design comes with a robust color-infused glass and Ceramic
+                        Shield front, more resistant than any smartphone glass. Featuring a 48 MP camera, it takes super
+                        high-resolution shots so it's easier than ever to take spectacular, highly detailed photos. Get
+                        yours now and experience the full iPhone 15 experience!
+                    </p>
+                    <h2>$4.139.010</h2>
                     <div class="shop">
-                        <label for="quantity">Quantity</label>
+                        <label for="quantity"></label>
                         <input type="number" id="quantity" name="quantity" min="1" max="5">
                         <button>Add to cart</button>
                     </div>
                 </div>
             </div>
         </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>iPhone 15</td>
+                        <td>$4.139.010</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone 15 Pro</td>
+                        <td>$5.139.010</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone 15 Pro Max</td>
+                        <td>$6.139.010</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer></footer>
 </body>
+<script>
+    document.querySelector(".hamburger").addEventListener("click", function () {
+      document.querySelector(".drawer").classList.add("open");
+    });
 
+    document
+      .querySelector(".close-drawer")
+      .addEventListener("click", function () {
+        document.querySelector(".drawer").classList.remove("open");
+      });
+  </script>
 </html>
