@@ -195,8 +195,17 @@
                     </p>
                     <h2>$4.139.010</h2>
                     <div class="shop">
-                        <label for="quantity"></label>
-                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        <div class="quantity-selector">
+
+                            <select id="quantity" class="quantity-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <!-- Puedes agregar más opciones si lo necesitas -->
+                            </select>
+                        </div>
                         <button>Add to cart</button>
                     </div>
                 </div>
@@ -240,16 +249,87 @@
                     </tr>
                     <tr>
                         <td>Charging and Expansion</td>
-                        <td><p>USB-C connector with support for: <br>
-                            Charging <br>
-                            DisplayPort <br>
-                            USB 2 (up to 480Mb/s)</p></td>
+                        <td>
+                            <p>USB-C connector with support for: <br>
+                                Charging <br>
+                                DisplayPort <br>
+                                USB 2 (up to 480Mb/s)</p>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </section>
+        <section class="might-be-int">
+            <h2>You might be interested in</h2>
+            <hr>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-upper">
+          <div class="company-info">
+            <h3>Up Ecommerce</h3>
+            <p>NIT: 123456789</p>
+          </div>
+          <div class="social-media">
+            <a href="https://facebook.com">
+              <img
+                src="/images/facebook.svg"
+                alt="Facebook logo"
+                width="32"
+                height="32"
+              />
+            </a>
+            <a href="https://twitter.com">
+              <img
+                src="/images/twitter.svg"
+                alt="Twitter logo"
+                width="32"
+                height="32"
+              />
+            </a>
+            <a href="https://instagram.com">
+              <img
+                src="/images/instagram.svg"
+                alt="Instagram logo"
+                width="32"
+                height="32"
+              />
+            </a>
+          </div>
+          <div class="payment-methods">
+            <p>Payment Methods</p>
+            <div class="payment-methods-logos">
+              <img
+                src="./images/visa.svg"
+                alt="Visa logo"
+                width="32"
+                height="32"
+              />
+              <img
+                src="/images/mastercard.svg"
+                alt="Mastercard logo"
+                width="32"
+                height="32"
+              />
+              <img
+                src="/images/paypal.svg"
+                alt="Paypal logo"
+                width="32"
+                height="32"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-lower">
+          <ul class="site-map">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </footer>
 </body>
 <script>
     document.querySelector(".hamburger").addEventListener("click", function () {

@@ -433,26 +433,11 @@ input[type="radio"] {
   display: none;
 }
 
-input:nth-child(1):checked~.slides .slide:nth-child(1) {
-  opacity: 1;
-}
-
-input:nth-child(2):checked~.slides .slide:nth-child(2) {
-  opacity: 1;
-}
-
-input:nth-child(3):checked~.slides .slide:nth-child(3) {
-  opacity: 1;
-}
-
-input:nth-child(4):checked~.slides .slide:nth-child(4) {
-  opacity: 1;
-}
-
-input:nth-child(5):checked~.slides .slide:nth-child(5) {
-  opacity: 1;
-}
-
+input:nth-child(1):checked~.slides .slide:nth-child(1),
+input:nth-child(2):checked~.slides .slide:nth-child(2),
+input:nth-child(3):checked~.slides .slide:nth-child(3),
+input:nth-child(4):checked~.slides .slide:nth-child(4),
+input:nth-child(5):checked~.slides .slide:nth-child(5),
 input:nth-child(6):checked~.slides .slide:nth-child(6) {
   opacity: 1;
 }
@@ -462,15 +447,13 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 300px; */
   padding: 10px;
-  /* border-radius: 50px; */
   background-color: white;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   flex-direction: column;
 }
 .controls label img:hover {
-  border: solid 2px #0056b3;
+  /* border: solid 2px #0056b3; */
+  transform: scale(1.1);
 }
 
 .controls label {
@@ -478,43 +461,17 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
   flex-direction: column;
   cursor: pointer;
   width: 35px;
-  /* height: 16px; */
   margin: 5px;
   background-color: #ddd;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
 
-.controls label:nth-child(1) {
-  background: radial-gradient(circle at 50% 50%, #ffdfdf 20%, #fcffd5 55%, #d5f7e5 50%, #d8e4ea 1%);
-}
-
-.controls label:nth-child(2) {
-  background-color: #ffdfdf;
-}
-
-.controls label:nth-child(3) {
-  background-color: #fcffd5;
-}
-
-.controls label:nth-child(4) {
-  background-color: #d5f7e5;
-}
-
-.controls label:nth-child(5) {
-  background-color: #d8e4ea;
-}
-
-.controls label:nth-child(6) {
-  background-color: #464646;
-}
 
 .desc-container {
   display: flex;
   flex-direction: column;
-  /* padding: 0px 20%; */
   margin-top: 20px;
-  /* justify-content: ; */
 }
 .desc-container p{
   text-align: justify;
@@ -524,7 +481,51 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
 .desc-container h2 {
   margin-top: 20px;
 }
+.quantity-selector {
+  display: inline-block;
+  border: 1px solid var(--main);
+  padding: 10px;
+  border-radius: 5px;
+}
 
+.quantity-selector label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.quantity-dropdown {
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.quantity-dropdown:focus {
+  border: none;
+}
+
+.quantity-dropdown::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  color: #000;
+}
+.quantity-dropdown::after:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.quantity-selector select {
+  width: 50px;
+  text-align: center;
+}
+
+.quantity-dropdown::-ms-expand {
+  display: none;
+}
 .shop {
   display: flex;
   align-items: center;
@@ -561,6 +562,14 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
 .tech-spec h2{
   padding-top: 30px;
 }
+
+.tech-spec hr{
+  border: none; /* Elimina el borde por defecto de hr */
+  height: 3px; /* Altura de la línea */
+  background: var(--main-dk); /* Gradiente con rojo en un 30% y transparente el resto */
+  width: 100%; /* Ancho completo del contenedor */
+  margin: 0; /* Elimina cualquier margen predeterminado */
+}
 .tech-spec table {
   width: 100%;
   border-collapse: collapse; /* Elimina los espacios entre bordes */
@@ -593,6 +602,21 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
   font-weight: bold; /* Aplica negrita al primer td de cada fila */
 }
 
+.might-be-int{
+  padding: 0px 100px;
+  background-color: white;
+}
+
+.might-be-int h2{
+  padding-top: 30px;
+}
+.might-be-int hr{
+  border: none; /* Elimina el borde por defecto de hr */
+  height: 3px; /* Altura de la línea */
+  background: var(--main-dk); /* Gradiente con rojo en un 30% y transparente el resto */
+  width: 100%; /* Ancho completo del contenedor */
+  margin: 0; /* Elimina cualquier margen predeterminado */
+}
 
 @media (max-width: 900px) {
   header {
@@ -650,6 +674,10 @@ input:nth-child(6):checked~.slides .slide:nth-child(6) {
   .tech-spec{
       padding: 0px 10px;
   }
+
+  .might-be-int{
+    padding: 0px 10px;
+}
 }
 
 
