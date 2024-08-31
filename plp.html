@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLP Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <button class="hamburger">
+            <img src="img/hamburger.svg" alt="Menu" />
+        </button>
+        <div class="logo">
+            <img src="img/logo.svg" alt="Company Logo" />
+            <span>Up Ecommerce</span>
+        </div>
+        <div class="search-bar">
+            <button>
+                <img src="img/magnifyng_glass.svg" alt="Search" />
+            </button>
+            <input type="text" placeholder="Search for products" />
+        </div>
+        <div class="header-links">
+            <a href="account.html">
+                <img src="img/account-icon.svg" alt="My Account" />
+                <span>My Account</span>
+            </a>
+            <a href="cart.html">
+                <img src="img/cart-icon.svg" alt="Cart" />
+                <span>Cart</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Sub Header -->
+
+    <nav class="subheader">
+        <ul class="menu">
+            <li class="menu-item">
+                Technology
+                <ul class="submenu">
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Televisions</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Printing</a></li>
+                    <li><a href="#">Cameras</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Appliances
+                <ul class="submenu">
+                    <li><a href="#">Air Conditioning</a></li>
+                    <li><a href="#">Refrigeration</a></li>
+                    <li><a href="#">Washers/Dryers</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Smartphones
+                <ul class="submenu">
+                    <li><a href="./plp.html">Smartphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Smartwatch</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Home
+                <ul class="submenu">
+                    <li><a href="#">Living Rooms</a></li>
+                    <li><a href="#">Dining Room</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Bathroom</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Drawer -->
+
+    <div class="drawer">
+        <div class="drawer-content">
+            <button class="close-drawer">X</button>
+            <div class="drawer-search-bar">
+                <input type="text" placeholder="Search for products" />
+            </div>
+            <nav class="drawer-menu-nav">
+                <ul>
+                    <li class="drawer-menu-item">
+                        <span>Technology</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Printing</a></li>
+                            <li><a href="#">Cameras</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Appliances</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Air Conditioning</a></li>
+                            <li><a href="#">Refrigeration</a></li>
+                            <li><a href="#">Washers/Dryers</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Smartphones</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="./plp.html">Smartphones</a></li>
+                            <li><a href="#">Tablets</a></li>
+                            <li><a href="#">Smartwatch</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Home</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Living Rooms</a></li>
+                            <li><a href="#">Dining Room</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Bathroom</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Breadcrum and Order By -->
+
+    <nav class="nav-plp">
+        <div class="breadcrum">
+            <a href="#">Home</a> > <a href="#">Smartphones</a>
+        </div>
+        <div class="orderby">
+            <select name="orderby" id="orderby">
+                <option value="" disabled selected hidden>Order by</option>
+                <option value="relevance">Relevance</option>
+                <option value="uploadd">Upload date</option>
+                <option value="lh-price">Lowest to highest price</option>
+                <option value="hl-price">Highest to lowest price</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="main-plp">
+
+        <!-- Categories -->
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Filters</button>
+        <div class="categories" id="categoriesMenu">
+            <span class="close-btn" onclick="toggleMenu()">×</span>
+            <!-- Price -->
+            <div class="categ-price">
+                <h2 class="plp-title">Price</h2>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="category1" name="category1">
+                    <label for="category1"> Less than $20 (8)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="category2" name="category2">
+                    <label for="category2"> $20 - $60 (16)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="category3" name="category3">
+                    <label for="category3"> More than $60 (21)</label><br>
+                </div>
+            </div>
+            <!-- Brand -->
+            <div class="categ-brand">
+                <h2 class="plp-title">Brand</h2>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="brand1" name="brand1">
+                    <label for="brand1"> Brand 1 (8)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="brand2" name="brand2">
+                    <label for="brand2"> Brand 2 (16)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="brand3" name="brand3">
+                    <label for="brand3"> Brand 3 (21)</label><br>
+                </div>
+            </div>
+            <!-- Rating -->
+            <div class="categ-rating">
+                <h2 class="plp-title">Rating</h2>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="rating1" name="rating1">
+                    <label for="rating1"> 3 Stars (11)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="rating2" name="rating2">
+                    <label for="rating2"> 4 Stars (20)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="rating3" name="rating3">
+                    <label for="rating3"> 5 Star (19)</label><br>
+                </div>
+            </div>
+            <!-- Discount -->
+            <div class="categ-discount">
+                <h2 class="plp-title">Discount</h2>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="discount1" name="discount1">
+                    <label for="discount1"> 10% off (29)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="discount2" name="discount2">
+                    <label for="discount2"> 20% off (40)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="discount3" name="discount3">
+                    <label for="discount3"> 50% off (25)</label><br>
+                </div>
+            </div>
+            <!-- Delivery -->
+            <div class="categ-delivery">
+                <h2 class="plp-title">Delivery</h2>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="delivery1" name="delivery1">
+                    <label for="delivery1"> Free (43)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="delivery2" name="delivery2">
+                    <label for="delivery2"> Fast (51)</label><br>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="delivery3" name="delivery3">
+                    <label for="delivery3"> International (20)</label><br>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Products -->
+
+        <div class="products">
+
+            <p>X results of Y</p>
+
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="product-info">
+                    <h2 class="plp-title">Product Name</h2>
+                    <div class="stars-container">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                    </div>
+                    <p class="price">$100.00</p>
+                    <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum
+                        nihil neque quisquam repudiandae quidem, itaque consectetur et dolores minima.</p>
+                    <a href="#">
+                        <div class="plp-button-container">
+                            <img src="img/cart.svg" alt="">
+                            <p>Add to cart</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <img class="ad" src="img/placeholder.jpg" alt="">
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-upper">
+            <div class="company-info">
+                <h3>Up Ecommerce</h3>
+                <p>NIT: 123456789</p>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com">
+                    <img src="img/facebook.svg" alt="Facebook logo" width="32" height="32" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="img/twitter.svg" alt="Twitter logo" width="32" height="32" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="img/instagram.svg" alt="Instagram logo" width="32" height="32" />
+                </a>
+            </div>
+            <div class="payment-methods">
+                <p>Payment Methods</p>
+                <div class="payment-methods-logos">
+                    <img src="img/visa.svg" alt="Visa logo" width="32" height="32" />
+                    <img src="img/mastercard.svg" alt="Mastercard logo" width="32" height="32" />
+                    <img src="img/paypal.svg" alt="Paypal logo" width="32" height="32" />
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <ul class="site-map">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.querySelector(".hamburger").addEventListener("click", function () {
+        document.querySelector(".drawer").classList.add("open");
+    });
+
+    document
+        .querySelector(".close-drawer")
+        .addEventListener("click", function () {
+            document.querySelector(".drawer").classList.remove("open");
+        });
+
+    function toggleMenu() {
+        var menu = document.getElementById('categoriesMenu');
+        menu.classList.toggle('open');
+    }
+</script>
+
+</html>
