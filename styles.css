@@ -245,16 +245,6 @@ header {
   background-color: #ededed;
 }
 
-/* .drawer-menu ul li {
-  padding: 10px 0;
-  color: var(--primary-text);
-  cursor: pointer;
-} */
-
-/* .drawer-menu ul li:hover {
-  background-color: #ededed;
-} */
-
 /* Hamburger button styling */
 .hamburger {
   background: none;
