@@ -434,7 +434,7 @@ a:active {
     font-family: "Montserrat", sans-serif;
 }
 
-h2 {
+.plp-title {
     margin-bottom: 5px;
 }
 
@@ -511,7 +511,7 @@ label {
 .product-container {
     display: flex;
     max-height: 300px;
-    min-width: 500px;
+    min-width: auto;
     background-color: white;
     margin-bottom: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
@@ -520,6 +520,7 @@ label {
 
 .product-container img {
     max-width: 300px;
+    height: 300px;
     border-radius: 32px 0 0 32px;
 }
 
@@ -696,6 +697,51 @@ label {
         display: none;
     }
 
+}
+
+@media (max-width: 650px) {
+    .product-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .plp-title {
+        font-size: 20px;
+    }
+
+    .product-desc {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    .price {
+        font-size: 20px;
+    }
+
+    .plp-button-container {
+        height: 30px;
+        width: 100px;
+        border-radius: 8px
+    }
+
+    .plp-button-container img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .plp-button-container p {
+        font-size: 10px;
+    }
+
+    .stars-container {
+        display: flex;
+        height: 12px;
+        width: 50px;
+    }
+    
+    .stars-container img {
+        height: 10px;
+    }
 }
 
 /***************************************************** PLP PAGE END *****************************************************/
