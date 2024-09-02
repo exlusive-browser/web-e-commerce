@@ -705,7 +705,7 @@ footer {
     padding: 10px;
   }
 
-  .box-item-car {
+  .box-item-car { 
     padding: 20px;
     justify-content: center;
   }
@@ -717,12 +717,15 @@ footer {
 
   .container-col-1 {
     border: none;
+    
+    width: 100%;
   }
 
   .container-col-2 {
     width: 100%;
     padding-bottom: 30px;
     padding-left: 0px;
+    
   }
 
   .box-item-car {
@@ -1116,44 +1119,7 @@ a:active {
 /***************************************************** PLP PAGE END *****************************************************/
 
 
-  #page-title {
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  #container-row-A {
-    flex-direction: column-reverse;
-    padding: 10px;
-  }
-
-  .box-item-car {
-    padding: 20px;
-    justify-content: center;
-  }
-
-  .box-item-car>img {
-    border-radius: 0;
-
-  }
-
-  .container-col-1 {
-    border: none;
-  }
-
-  .container-col-2 {
-    width: 100%;
-    padding-bottom: 30px;
-    padding-left: 0px;
-  }
-
-  .box-item-car {
-    justify-content: center;
-  }
-
-  .box-content-desc {
-    width: 100%;
-  }
+ 
 
 
 
