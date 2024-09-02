@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Product Grid</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E commerce Site</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <button class="hamburger">
+        <img src="Images/header/hamburger.svg" alt="Menu" />
+      </button>
+      <div class="logo">
+        <img src="Images/header/logo.svg" alt="Company Logo" />
+        <span>Up Ecommerce</span>
+      </div>
+      <div class="search-bar">
+        <button>
+          <img src="Images/header/magnifyng_glass.svg" alt="Search" />
+        </button>
+        <input type="text" placeholder="Search for products" />
+      </div>
+      <div class="header-links">
+        <a href="account.html">
+          <img src="Images/header/account-icon.svg" alt="My Account" />
+          <span>My Account</span>
+        </a>
+        <a href="cart.html">
+          <img src="Images/header/cart-icon.svg" alt="Cart" />
+          <span>Cart</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Sub Header -->
+
+    <nav class="subheader">
+      <ul class="menu">
+        <li class="menu-item">
+          Technology
+          <ul class="submenu">
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Televisions</a></li>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Printing</a></li>
+            <li><a href="#">Cameras</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          Appliances
+          <ul class="submenu">
+            <li><a href="#">Air Conditioning</a></li>
+            <li><a href="#">Refrigeration</a></li>
+            <li><a href="#">Washers/Dryers</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          Smartphones
+          <ul class="submenu">
+            <li><a href="./plp.html">Smartphones</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Smartwatch</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          Home
+          <ul class="submenu">
+            <li><a href="#">Living Rooms</a></li>
+            <li><a href="#">Dining Room</a></li>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bathroom</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Drawer -->
+
+    <div class="drawer">
+      <div class="drawer-content">
+        <button class="close-drawer">X</button>
+        <div class="drawer-search-bar">
+          <input type="text" placeholder="Search for products" />
+        </div>
+        <nav class="drawer-menu-nav">
+          <ul>
+            <li class="drawer-menu-item">
+              <span>Technology</span>
+              <ul class="drawer-submenu">
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Televisions</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Printing</a></li>
+                <li><a href="#">Cameras</a></li>
+              </ul>
+            </li>
+            <li class="drawer-menu-item">
+              <span>Appliances</span>
+              <ul class="drawer-submenu">
+                <li><a href="#">Air Conditioning</a></li>
+                <li><a href="#">Refrigeration</a></li>
+                <li><a href="#">Washers/Dryers</a></li>
+              </ul>
+            </li>
+            <li class="drawer-menu-item">
+              <span>Smartphones</span>
+              <ul class="drawer-submenu">
+                <li><a href="./plp.html">Smartphones</a></li>
+                <li><a href="#">Tablets</a></li>
+                <li><a href="#">Smartwatch</a></li>
+              </ul>
+            </li>
+            <li class="drawer-menu-item">
+              <span>Home</span>
+              <ul class="drawer-submenu">
+                <li><a href="#">Living Rooms</a></li>
+                <li><a href="#">Dining Room</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Bathroom</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <script>
+            document.querySelector(".hamburger").addEventListener("click", function () {
+              document.querySelector(".drawer").classList.add("open");
+            });
+        
+            document
+              .querySelector(".close-drawer")
+              .addEventListener("click", function () {
+                document.querySelector(".drawer").classList.remove("open");
+              });
+          </script>
+      </div>
+    </div>
+
 <body>
     <div class="container">
+        <div class="header-image">
+            <img src="Images/sale1.png" alt="Technology Banner 1" class="image1" />
+            <img src="Images/sale2.png" alt="Technology Banner 2" class="image2" />
+            
+        </div>
+        <div class="additional-image">
+            <img src="Images/sale3.png" alt="Technology Banner 3" class="image3" />
+        </div>
         <div class="header">
             <h2>Technology <span>12 results</span></h2>
         </div>
@@ -287,6 +436,76 @@
             <button>3</button>
         </div>    
     </div>
+    <div class="image-container">
+      <img src="Images/sale4.png" alt="Last discount image">
+    </div>
 </body>
+<div class="dummy-content"></div>
+    <footer>
+      <div class="footer-upper">
+        <div class="company-info">
+          <h3>Up Ecommerce</h3>
+          <p>NIT: 123456789</p>
+        </div>
+        <div class="social-media">
+          <a href="https://facebook.com">
+            <img
+              src="./Images/footer/facebook.svg"
+              alt="Facebook logo"
+              width="32"
+              height="32"
+            />
+          </a>
+          <a href="https://twitter.com">
+            <img
+              src="./Images/footer/twitter.svg"
+              alt="Twitter logo"
+              width="32"
+              height="32"
+            />
+          </a>
+          <a href="https://instagram.com">
+            <img
+              src="./Images/footer/instagram.svg"
+              alt="Instagram logo"
+              width="32"
+              height="32"
+            />
+          </a>
+        </div>
+        <div class="payment-methods">
+          <p>Payment Methods</p>
+          <div class="payment-methods-logos">
+            <img
+              src="./Images/footer/visa.svg"
+              alt="Visa logo"
+              width="32"
+              height="32"
+            />
+            <img
+              src="./Images/footer/mastercard.svg"
+              alt="Mastercard logo"
+              width="32"
+              height="32"
+            />
+            <img
+              src="./Images/footer/paypal.svg"
+              alt="Paypal logo"
+              width="32"
+              height="32"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer-lower">
+        <ul class="site-map">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
-
