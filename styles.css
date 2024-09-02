@@ -116,9 +116,11 @@ header {
 .subheader {
   padding: 0.8rem 2rem;
   background-color: #fff;
+
   position: relative; 
   z-index: 100; 
 }
+
 
 
 .menu {
@@ -219,7 +221,7 @@ header {
   flex-direction: column;
   gap: 1rem;
   overflow: auto;
-  
+
 }
 
 .drawer-menu-nav ul {
@@ -249,6 +251,7 @@ header {
   background-color: #ededed;
 }
 
+
 /* .drawer-menu ul li {
   padding: 10px 0;
   color: var(--primary-text);
@@ -258,6 +261,7 @@ header {
 /* .drawer-menu ul li:hover {
   background-color: #ededed;
 } */
+
 
 /* Hamburger button styling */
 .hamburger {
@@ -414,6 +418,7 @@ footer {
     justify-content: center;
   }
 }
+
 
 /*Home-Page*/
 
@@ -838,3 +843,4 @@ border-radius: 8px;
   height: auto;
 } 
 }
+
