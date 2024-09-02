@@ -561,9 +561,27 @@ label {
     margin-top: 2%;
 }
 
+.price-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .price {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 100;
+    text-decoration:line-through;
+}
+
+.discount-price {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.discount{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--main);
 }
 
 .plp-button-container {
@@ -700,13 +718,18 @@ label {
 }
 
 @media (max-width: 650px) {
+
+    .checkbox-container label{
+        font-size: 12px;
+    }
+
     .product-container img {
         width: 150px;
         height: 150px;
     }
 
-    .plp-title {
-        font-size: 20px;
+    .product-info .plp-title {
+        font-size: 15px;
     }
 
     .product-desc {
@@ -716,6 +739,10 @@ label {
     
     .price {
         font-size: 20px;
+    }
+
+    .discount {
+        font-size: 10px;
     }
 
     .plp-button-container {
