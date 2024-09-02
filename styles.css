@@ -816,9 +816,10 @@ td {
     transform: translateX(0);
   }
 
-  .breadcrumb{
+  .breadcrumb {
     margin-left: 10px;
   }
+
   .product-desc {
     padding: 10px;
   }
