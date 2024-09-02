@@ -1,6 +1,3 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -333,6 +330,27 @@ header {
     .drawer.open {
         transform: translateX(0);
     }
+  
+    .product-desc {
+    padding: 10px;
+  }
+
+  .container-sec1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc-container p {
+    font-size: 0.9rem;
+  }
+
+  .tech-spec {
+    padding: 0px 10px;
+  }
+
+  .might-be-int {
+    padding: 0px 10px;
+  }
 
 }
 
@@ -1549,4 +1567,268 @@ border-radius: 8px;
 } 
 }
 
+/* Product Page */
 
+
+.product-desc {
+  padding: 0px 100px;
+  background-color: white;
+}
+
+section h1 {
+  padding: 20px 0px;
+  font-size: 2.5rem;
+  /* margin-top: 20px; */
+}
+
+.container-sec1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.carrusel-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input:nth-child(1):checked~.slides .slide:nth-child(1),
+input:nth-child(2):checked~.slides .slide:nth-child(2),
+input:nth-child(3):checked~.slides .slide:nth-child(3),
+input:nth-child(4):checked~.slides .slide:nth-child(4),
+input:nth-child(5):checked~.slides .slide:nth-child(5),
+input:nth-child(6):checked~.slides .slide:nth-child(6) {
+  opacity: 1;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.controls label img:hover {
+  /* border: solid 2px #0056b3; */
+  transform: scale(1.1);
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 35px;
+  margin: 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.desc-container p {
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.desc-container h2 {
+  margin-top: 20px;
+}
+
+.quantity-selector {
+  display: inline-block;
+  border: 1px solid var(--main);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.quantity-selector label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.quantity-dropdown {
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.quantity-dropdown:focus {
+  border: none;
+}
+
+.quantity-dropdown::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  color: #000;
+}
+
+.quantity-dropdown::after:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.quantity-selector select {
+  width: 50px;
+  text-align: center;
+}
+
+.quantity-dropdown::-ms-expand {
+  display: none;
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.shop input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.shop button {
+  padding: 10px 20px;
+  background-color: var(--main);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop button:hover {
+  background-color: var(--main-dk);
+}
+
+.tech-spec {
+  padding: 0px 100px;
+  background-color: white;
+}
+
+.tech-spec h2 {
+  padding-top: 30px;
+}
+
+.tech-spec hr {
+  border: none;
+  /* Elimina el borde por defecto de hr */
+  height: 3px;
+  /* Altura de la línea */
+  background: var(--main-dk);
+  /* Gradiente con rojo en un 30% y transparente el resto */
+  width: 100%;
+  /* Ancho completo del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen predeterminado */
+}
+
+.tech-spec table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Elimina los espacios entre bordes */
+  margin-top: 20px;
+}
+
+.tech-spec th,
+td {
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  /* Alinea a la izquierda */
+}
+
+.tech-spec td {
+  text-align: center;
+}
+
+.tech-spec thead {
+  background-color: #5499cd;
+  /* Color de fondo para el encabezado */
+}
+
+.tech-spec thead tr th {
+  color: white;
+}
+
+.tech-spec tbody tr:nth-child(even) {
+  background-color: #ebebeb;
+  /* Alterna el color de fondo de las filas */
+}
+
+.tech-spec tbody td:first-child {
+  font-weight: bold;
+  /* Aplica negrita al primer td de cada fila */
+}
+
+.might-be-int {
+  padding: 20px 100px;
+  background-color: white;
+}
+
+.might-be-int h2 {
+  padding-top: 30px;
+}
+
+.might-be-int hr {
+  border: none;
+  /* Elimina el borde por defecto de hr */
+  height: 3px;
+  /* Altura de la línea */
+  background: var(--main-dk);
+  /* Gradiente con rojo en un 30% y transparente el resto */
+  width: 100%;
+  /* Ancho completo del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen predeterminado */
+}
