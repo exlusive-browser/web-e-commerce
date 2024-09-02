@@ -845,6 +845,7 @@ a:active {
     margin-bottom: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     border-radius: 32px;
+    cursor: pointer;
 }
 
 .product-container img {
@@ -1103,7 +1104,6 @@ a:active {
 
 /***************************************************** PLP PAGE END *****************************************************/
 
-  }
 
   #page-title {
     padding-left: 10px;
@@ -1144,5 +1144,5 @@ a:active {
     width: 100%;
   }
 
-}
+
 
