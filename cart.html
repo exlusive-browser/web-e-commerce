@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E commerce Site</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,356 +15,327 @@
 </head>
 
 <body>
-
-    <body>
-        <!-- Header -->
-
-        <header>
-            <button class="hamburger">
-                <img src="img/header/hamburger.svg" alt="Menu" />
+    <!-- Header -->
+    <header>
+        <button class="hamburger">
+            <img src="img/header/hamburger.svg" alt="Menu" />
+        </button>
+        <div class="logo">
+            <img src="img/header/logo.svg" alt="Company Logo" />
+            <span>Up Ecommerce</span>
+        </div>
+        <div class="search-bar">
+            <button>
+                <img src="img/header/magnifyng_glass.svg" alt="Search" />
             </button>
-            <div class="logo">
-                <img src="img/header/logo.svg" alt="Company Logo" />
-                <span>Up Ecommerce</span>
-            </div>
-            <div class="search-bar">
-                <button>
-                    <img src="img/header/magnifyng_glass.svg" alt="Search" />
-                </button>
+            <input type="text" placeholder="Search for products" />
+        </div>
+        <div class="header-links">
+            <a href="account.html">
+                <img src="img/header/account-icon.svg" alt="My Account" />
+                <span>My Account</span>
+            </a>
+            <a href="cart.html">
+                <img src="img/header/cart-icon.svg" alt="Cart" />
+                <span>Cart</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Sub Header -->
+    <nav class="subheader">
+        <ul class="menu">
+            <li class="menu-item">
+                Technology
+                <ul class="submenu">
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Televisions</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Printing</a></li>
+                    <li><a href="#">Cameras</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Appliances
+                <ul class="submenu">
+                    <li><a href="#">Air Conditioning</a></li>
+                    <li><a href="#">Refrigeration</a></li>
+                    <li><a href="#">Washers/Dryers</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Smartphones
+                <ul class="submenu">
+                    <li><a href="./plp.html">Smartphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Smartwatch</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Home
+                <ul class="submenu">
+                    <li><a href="#">Living Rooms</a></li>
+                    <li><a href="#">Dining Room</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Bathroom</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Drawer -->
+    <div class="drawer">
+        <div class="drawer-content">
+            <button class="close-drawer">X</button>
+            <div class="drawer-search-bar">
                 <input type="text" placeholder="Search for products" />
             </div>
-            <div class="header-links">
-                <a href="account.html">
-                    <img src="img/header/account-icon.svg" alt="My Account" />
-                    <span>My Account</span>
-                </a>
-                <a href="cart.html">
-                    <img src="img/header/cart-icon.svg" alt="Cart" />
-                    <span>Cart</span>
-                </a>
-            </div>
-        </header>
-
-        <!-- Sub Header -->
-
-        <nav class="subheader">
-            <ul class="menu">
-                <li class="menu-item">
-                    Technology
-                    <ul class="submenu">
-                        <li><a href="#">Computers</a></li>
-                        <li><a href="#">Televisions</a></li>
-                        <li><a href="#">Audio</a></li>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Printing</a></li>
-                        <li><a href="#">Cameras</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    Appliances
-                    <ul class="submenu">
-                        <li><a href="#">Air Conditioning</a></li>
-                        <li><a href="#">Refrigeration</a></li>
-                        <li><a href="#">Washers/Dryers</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    Smartphones
-                    <ul class="submenu">
-                        <li><a href="./plp.html">Smartphones</a></li>
-                        <li><a href="#">Tablets</a></li>
-                        <li><a href="#">Smartwatch</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    Home
-                    <ul class="submenu">
-                        <li><a href="#">Living Rooms</a></li>
-                        <li><a href="#">Dining Room</a></li>
-                        <li><a href="#">Kitchen</a></li>
-                        <li><a href="#">Bathroom</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Drawer -->
-
-        <div class="drawer">
-            <div class="drawer-content">
-                <button class="close-drawer">X</button>
-                <div class="drawer-search-bar">
-                    <input type="text" placeholder="Search for products" />
-                </div>
-                <nav class="drawer-menu-nav">
-                    <ul>
-                        <li class="drawer-menu-item">
-                            <span>Technology</span>
-                            <ul class="drawer-submenu">
-                                <li><a href="#">Computers</a></li>
-                                <li><a href="#">Televisions</a></li>
-                                <li><a href="#">Audio</a></li>
-                                <li><a href="#">Video</a></li>
-                                <li><a href="#">Printing</a></li>
-                                <li><a href="#">Cameras</a></li>
-                            </ul>
-                        </li>
-                        <li class="drawer-menu-item">
-                            <span>Appliances</span>
-                            <ul class="drawer-submenu">
-                                <li><a href="#">Air Conditioning</a></li>
-                                <li><a href="#">Refrigeration</a></li>
-                                <li><a href="#">Washers/Dryers</a></li>
-                            </ul>
-                        </li>
-                        <li class="drawer-menu-item">
-                            <span>Smartphones</span>
-                            <ul class="drawer-submenu">
-                                <li><a href="./plp.html">Smartphones</a></li>
-                                <li><a href="#">Tablets</a></li>
-                                <li><a href="#">Smartwatch</a></li>
-                            </ul>
-                        </li>
-                        <li class="drawer-menu-item">
-                            <span>Home</span>
-                            <ul class="drawer-submenu">
-                                <li><a href="#">Living Rooms</a></li>
-                                <li><a href="#">Dining Room</a></li>
-                                <li><a href="#">Kitchen</a></li>
-                                <li><a href="#">Bathroom</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <div class="dummy-content"></div>
-
-        <!-- End of header -->
-
-
-
-
-
-
-
-
-
-
-
-        <!-- pageCar -->
-        <div class="pageCar">
-            <h1 id="page-title">SHOPPING CAR</h1>
-
-            <div id="container-row-A">
-                <div class="container-col-1">
-                    <div class="box-item-car">
-                        <img src="img/No_Image_Available.jpg" alt="productImage" width="200px" height="200px" />
-                        <div class="box-content-desc">
-                            <p class="pro-name">Iphone 15</p>
-                            <p>Discover the new iPhone 15, Apple's latest innovation that redefines the mobile
-                                experience!
-                                This
-                                device combines an elegant design with a 6.1-inch Super Retina XDR OLED display to
-                                deliver
-                                vibrant colors and sharp details.</p>
-                        </div>
-                        <div class="ship-opt">
-                            <h4>Shipping method</h4>
-                            <input type="radio" id="express" name="method" value="express">
-                            <label for="express">express</label><br>
-                            <input type="radio" id="regular" name="method" value="regular">
-                            <label for="regular">regular</label><br>
-                            <input type="radio" id="economic" name="method" value="economic">
-                            <label for="economic">economic</label>
-                        </div>
-                        <div class="box-option-bt">
-                            <div class="colums">
-                                <label for="amount">amount:</label>
-                                <input class="styled-number-picker" type="number" id="amount" name="amount" min="1"
-                                    max="10" value="1">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="box-item-car">
-                        <img src="img/No_Image_Available.jpg" alt="productImage" width="200px" height="200px" />
-                        <div class="box-content-desc">
-                            <p class="pro-name">Iphone 15</p>
-                            <p>Discover the new iPhone 15, Apple's latest innovation that redefines the mobile
-                                experience!
-                                This
-                                device combines an elegant design with a 6.1-inch Super Retina XDR OLED display to
-                                deliver
-                                vibrant colors and sharp details.</p>
-                        </div>
-                        <div class="ship-opt">
-                            <h4>Shipping method</h4>
-                            <input type="radio" id="express" name="method" value="express">
-                            <label for="express">express</label><br>
-                            <input type="radio" id="regular" name="method" value="regular">
-                            <label for="regular">regular</label><br>
-                            <input type="radio" id="economic" name="method" value="economic">
-                            <label for="economic">economic</label>
-                        </div>
-                        <div class="box-option-bt">
-                            <div class="colums">
-                                <label for="amount">amount:</label>
-                                <input class="styled-number-picker" type="number" id="amount" name="amount" min="1"
-                                    max="10" value="1">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="box-item-car">
-                        <img src="img/No_Image_Available.jpg" alt="productImage" width="200px" height="200px" />
-                        <div class="box-content-desc">
-                            <p class="pro-name">Iphone 15</p>
-                            <p>Discover the new iPhone 15, Apple's latest innovation that redefines the mobile
-                                experience!
-                                This
-                                device combines an elegant design with a 6.1-inch Super Retina XDR OLED display to
-                                deliver
-                                vibrant colors and sharp details.</p>
-                        </div>
-                        <div class="ship-opt">
-                            <h4>Shipping method</h4>
-                            <input type="radio" id="express" name="method" value="express">
-                            <label for="express">express</label><br>
-                            <input type="radio" id="regular" name="method" value="regular">
-                            <label for="regular">regular</label><br>
-                            <input type="radio" id="economic" name="method" value="economic">
-                            <label for="economic">economic</label>
-                        </div>
-                        <div class="box-option-bt">
-                            <div class="colums">
-                                <label for="amount">amount:</label>
-                                <input class="styled-number-picker" type="number" id="amount" name="amount" min="1"
-                                    max="10" value="1">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="container-col-2">
-                    <div class="box-purchase-summary">
-                        <div>
-                            <h3>Purchase summary</h3>
-                            <br>
-                            <div class="colums2 details">
-                                <div>
-                                    <h4>Sub-total:</h4>
-                                    <h4>Purchase delivary:</h4>
-                                </div>
-                                <div class="details-num">
-                                    <h4>$150</h4>
-                                    <h4>$0</h4>
-                                </div>
-                            </div>
-
-                            <hr class="separator-line" />
-
-                            <h3>Discounts</h3>
-                            <div class="colums2 details">
-                                <div>
-                                    <h4>Iphone 15:</h4>
-                                    <h4>Iphone 15:</h4>
-                                    <h4>Iphone 15:</h4>
-
-                                </div>
-                                <div class="details-num">
-                                    <h4>$-30</h4>
-                                    <h4>$-30</h4>
-                                    <h4>$-30</h4>
-
-                                </div>
-                            </div>
-                            <div class="colums2">
-                                <h4>Total discount</h4>
-                                <h5 id="totalDis">$-90</h5>
-                            </div>
-
-                            <hr class="separator-line" />
-
-                            <div class="colums2">
-                                <h4>Total</h4>
-                                <h5 id="totalCar">$150</h5>
-                            </div>
-                            <br>
-                            <div class="pos-but">
-                                <button class="buy-but">start payment</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-        </div>
-        <!-- End of pageCar -->
-
-        <!-- footer -->
-        <footer>
-            <div class="footer-upper">
-                <div class="company-info">
-                    <h3>Up Ecommerce</h3>
-                    <p>NIT: 123456789</p>
-                </div>
-                <div class="social-media">
-                    <a href="https://facebook.com">
-                        <img src="./img/footer/facebook.svg" alt="Facebook logo" width="32" height="32" />
-                    </a>
-                    <a href="https://twitter.com">
-                        <img src="./img/footer/twitter.svg" alt="Twitter logo" width="32" height="32" />
-                    </a>
-                    <a href="https://instagram.com">
-                        <img src="./img/footer/instagram.svg" alt="Instagram logo" width="32" height="32" />
-                    </a>
-                </div>
-                <div class="payment-methods">
-                    <p>Payment Methods</p>
-                    <div class="payment-methods-logos">
-                        <img src="./img/footer/visa.svg" alt="Visa logo" width="32" height="32" />
-                        <img src="./img/footer/mastercard.svg" alt="Mastercard logo" width="32" height="32" />
-                        <img src="./img/footer/paypal.svg" alt="Paypal logo" width="32" height="32" />
-                    </div>
-                </div>
-            </div>
-            <div class="footer-lower">
-                <ul class="site-map">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+            <nav class="drawer-menu-nav">
+                <ul>
+                    <li class="drawer-menu-item">
+                        <span>Technology</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Printing</a></li>
+                            <li><a href="#">Cameras</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Appliances</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Air Conditioning</a></li>
+                            <li><a href="#">Refrigeration</a></li>
+                            <li><a href="#">Washers/Dryers</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Smartphones</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="./plp.html">Smartphones</a></li>
+                            <li><a href="#">Tablets</a></li>
+                            <li><a href="#">Smartwatch</a></li>
+                        </ul>
+                    </li>
+                    <li class="drawer-menu-item">
+                        <span>Home</span>
+                        <ul class="drawer-submenu">
+                            <li><a href="#">Living Rooms</a></li>
+                            <li><a href="#">Dining Room</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Bathroom</a></li>
+                        </ul>
+                    </li>
                 </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="dummy-content"></div>
+
+    <!-- End of header -->
+
+
+
+
+
+    <!-- pageCar -->
+    <div class="pageCar">
+        <a href="index.html">Home </a>/<a href="cart.html"> shopping cart</a>
+        <h1 id="page-title">SHOPPING CART</h1>
+
+        <div id="container-row-A">
+            <div class="container-col-1">
+                <div class="box-item-car">
+                    <img src="img/No_Image_Available.jpg" alt="productImage" width="200px" height="200px" />
+                    <div class="box-content-desc">
+                        <p class="pro-name">Iphone 15</p>
+                        <p>Discover the new iPhone 15, Apple's latest innovation that redefines the mobile
+                            experience!
+                            This
+                            device combines an elegant design with a 6.1-inch Super Retina XDR OLED display to
+                            deliver
+                            vibrant colors and sharp details.</p>
+                    </div>
+                    <div class="ship-opt">
+                        <h4>Shipping method</h4>
+                        <input type="radio" id="express" name="method" value="express">
+                        <label for="express">express</label><br>
+                        <input type="radio" id="regular" name="method" value="regular">
+                        <label for="regular">regular</label><br>
+                        <input type="radio" id="economic" name="method" value="economic">
+                        <label for="economic">economic</label>
+                    </div>
+                    <div class="box-option-bt">
+                        <div class="colums">
+                            <label for="amount">amount:</label>
+                            <input class="styled-number-picker" type="number" id="amount" name="amount" min="1" max="10"
+                                value="1">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box-item-car">
+                    <img src="img/No_Image_Available.jpg" alt="productImage" width="200px" height="200px" />
+                    <div class="box-content-desc">
+                        <p class="pro-name">Iphone 15</p>
+                        <p>Discover the new iPhone 15, Apple's latest innovation that redefines the mobile
+                            experience!
+                            This
+                            device combines an elegant design with a 6.1-inch Super Retina XDR OLED display to
+                            deliver
+                            vibrant colors and sharp details.</p>
+                    </div>
+                    <div class="ship-opt">
+                        <h4>Shipping method</h4>
+                        <input type="radio" id="express" name="method" value="express">
+                        <label for="express">express</label><br>
+                        <input type="radio" id="regular" name="method" value="regular">
+                        <label for="regular">regular</label><br>
+                        <input type="radio" id="economic" name="method" value="economic">
+                        <label for="economic">economic</label>
+                    </div>
+                    <div class="box-option-bt">
+                        <div class="colums">
+                            <label for="amount">amount:</label>
+                            <input class="styled-number-picker" type="number" id="amount" name="amount" min="1" max="10"
+                                value="1">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box-item-car">
+                    <img src="img/No_Image_Available.jpg" alt="productImage" width="200px" height="200px" />
+                    <div class="box-content-desc">
+                        <p class="pro-name">Iphone 15</p>
+                        <p>Discover the new iPhone 15, Apple's latest innovation that redefines the mobile
+                            experience!
+                            This
+                            device combines an elegant design with a 6.1-inch Super Retina XDR OLED display to
+                            deliver
+                            vibrant colors and sharp details.</p>
+                    </div>
+                    <div class="ship-opt">
+                        <h4>Shipping method</h4>
+                        <input type="radio" id="express" name="method" value="express">
+                        <label for="express">express</label><br>
+                        <input type="radio" id="regular" name="method" value="regular">
+                        <label for="regular">regular</label><br>
+                        <input type="radio" id="economic" name="method" value="economic">
+                        <label for="economic">economic</label>
+                    </div>
+                    <div class="box-option-bt">
+                        <div class="colums">
+                            <label for="amount">amount:</label>
+                            <input class="styled-number-picker" type="number" id="amount" name="amount" min="1" max="10"
+                                value="1">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div class="container-col-2">
+                <div class="box-purchase-summary">
+                    <div>
+                        <h3>Purchase summary</h3>
+                        <br>
+                        <div class="colums2 details">
+                            <div>
+                                <h4>Sub-total:</h4>
+                                <h4>Purchase delivary:</h4>
+                            </div>
+                            <div class="details-num">
+                                <h4>$150</h4>
+                                <h4>$0</h4>
+                            </div>
+                        </div>
+                        <hr class="separator-line" />
+                        <h3>Discounts</h3>
+                        <div class="colums2 details">
+                            <div>
+                                <h4>Iphone 15:</h4>
+                                <h4>Iphone 15:</h4>
+                                <h4>Iphone 15:</h4>
+                            </div>
+                            <div class="details-num">
+                                <h4>$-30</h4>
+                                <h4>$-30</h4>
+                                <h4>$-30</h4>
+                            </div>
+                        </div>
+                        <div class="colums2">
+                            <h4>Total discount</h4>
+                            <h5 id="totalDis">$-90</h5>
+                        </div>
+                        <hr class="separator-line" />
+                        <div class="colums2">
+                            <h4>Total</h4>
+                            <h5 id="totalCar">$150</h5>
+                        </div>
+                        <br>
+                        <div class="pos-but">
+                            <button class="buy-but">start payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of pageCar -->
 
-        <!-- End of footer -->
+    <!-- footer -->
+    <footer>
+        <div class="footer-upper">
+            <div class="company-info">
+                <h3>Up Ecommerce</h3>
+                <p>NIT: 123456789</p>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com">
+                    <img src="./img/footer/facebook.svg" alt="Facebook logo" width="32" height="32" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./img/footer/twitter.svg" alt="Twitter logo" width="32" height="32" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/footer/instagram.svg" alt="Instagram logo" width="32" height="32" />
+                </a>
+            </div>
+            <div class="payment-methods">
+                <p>Payment Methods</p>
+                <div class="payment-methods-logos">
+                    <img src="./img/footer/visa.svg" alt="Visa logo" width="32" height="32" />
+                    <img src="./img/footer/mastercard.svg" alt="Mastercard logo" width="32" height="32" />
+                    <img src="./img/footer/paypal.svg" alt="Paypal logo" width="32" height="32" />
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <ul class="site-map">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- End of footer -->
 
+</body>
 
+<script>
+    document.querySelector(".hamburger").addEventListener("click", function () {
+        document.querySelector(".drawer").classList.add("open");
+    });
 
-
-
-    </body>
-
-    <script>
-        document.querySelector(".hamburger").addEventListener("click", function () {
-            document.querySelector(".drawer").classList.add("open");
+    document
+        .querySelector(".close-drawer")
+        .addEventListener("click", function () {
+            document.querySelector(".drawer").classList.remove("open");
         });
-
-        document
-            .querySelector(".close-drawer")
-            .addEventListener("click", function () {
-                document.querySelector(".drawer").classList.remove("open");
-            });
-    </script>
+</script>
 
 </html>
