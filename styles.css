@@ -344,11 +344,11 @@ header {
     font-size: 0.9rem;
   }
 
-  .tech-spec {
+  #tech-spec {
     padding: 0px 10px;
   }
 
-  .might-be-int {
+  #might-be-int {
     padding: 0px 10px;
   }
   #product-desc2 {
