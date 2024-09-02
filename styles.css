@@ -450,7 +450,7 @@ a:active {
     margin-bottom: 20px;
 }
 
-label {
+.checkbox-container label {
     color: rgb(101, 101, 101);
 }
 
@@ -737,8 +737,8 @@ label {
         font-weight: 500;
     }
     
-    .price {
-        font-size: 20px;
+    .price, .discount-price {
+        font-size: 15px;
     }
 
     .discount {
