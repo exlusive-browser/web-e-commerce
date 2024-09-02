@@ -1,3 +1,4 @@
+
 /* Header and Footer UH2000 */
 
 :root {
@@ -30,6 +31,7 @@ body {
 
 .dummy-content {
     flex-grow: 1;
+
 }
 
 /* Header */
@@ -111,11 +113,13 @@ header {
 
 .header-links a:hover {
     color: var(--main-lg);
+
 }
 
 /* Sub Header */
 
 .subheader {
+
     padding: 0.8rem 2rem;
     background-color: #fff;
 }
@@ -169,12 +173,14 @@ header {
 
 .menu-item:hover .submenu {
     display: block;
+
 }
 
 /* Drawer */
 
 /* Hide the drawer by default */
 .drawer {
+
     display: none;
     position: fixed;
     top: 0;
@@ -314,11 +320,13 @@ header {
     .drawer.open {
         transform: translateX(0);
     }
+
 }
 
 /* Footer */
 
 footer * {
+
     color: #fff;
 }
 
@@ -772,3 +780,4 @@ label {
 }
 
 /***************************************************** PLP PAGE END *****************************************************/
+
